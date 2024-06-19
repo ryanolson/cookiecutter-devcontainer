@@ -18,10 +18,10 @@
         }
     },
     "initializeCommand": "bash .devcontainer/initialize.sh",
-    // "onCreateCommand": "bash .devcontainer/00-on-create.sh",
-    // "updateContentCommand": "bash .devcontainer/01-update-content.sh",
-    // "postCreateCommand": "bash .devcontainer/02-post-create.sh",
-    // "postAttachCommand": "bash .devcontainer/03-post-attach.sh",
+    "onCreateCommand": "bash .devcontainer/00-on-create.sh",
+    "updateContentCommand": "bash .devcontainer/01-update-content.sh",
+    "postCreateCommand": "bash .devcontainer/02-post-create.sh",
+    "postAttachCommand": "bash .devcontainer/03-post-attach.sh",
     "overrideCommand": false,
     "remoteUser": "${localEnv:USER}",
     "updateRemoteUserUID": false
