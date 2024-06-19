@@ -37,4 +37,4 @@ if [ -d "$VOLUME_PATH" ]; then
 fi
 
 # Execute the original command as the specified user
-exec /usr/local/bin/gosu $USERNAME "$@"
+exec gosu $USERNAME "$@"
