@@ -1,6 +1,9 @@
 {
     "name": "{{cookiecutter.project_name}} devcontainer",
-    "image": "{{cookiecutter.base_image}}",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": "."
+    },
     "runArgs": [
         "--env-file",
         ".devcontainer/.user"
