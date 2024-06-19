@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Load environment variables from .env file if it exists
-# if [ -f /workspace/.env ]; then
-#     export $(grep -v '^#' /workspace/.env | xargs)
-# fi
+if [ -f /workspace/.devcontainer/.env ]; then
+    export $(grep -v '^#' /workspace/.devcontainer/.env | xargs)
+fi
 
 # Get the host user, group ID, username, and group name
 USER_ID=${DEV_UID:-9001}
