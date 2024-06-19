@@ -1,0 +1,4 @@
+{
+    "project_name": "NIM SDK Development",
+    "base_image": "ubuntu:latest"
+}
