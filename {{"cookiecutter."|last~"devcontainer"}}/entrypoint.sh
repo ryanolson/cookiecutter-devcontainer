@@ -1,4 +1,6 @@
-#!/bin/bash -x
+#!/bin/bash -x -e
+
+echo "*** Running entrypoint.sh script..."
 
 if [ -f /workspace/.devcontainer/.user ]; then
     export $(grep -v '^#' /workspace/.devcontainer/.user | xargs)
