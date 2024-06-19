@@ -1,8 +1,9 @@
 {
     "name": "{{cookiecutter.project_name}} devcontainer",
-    "image": "{{cookiecutter.devcontainer_base_image}}",
+    "image": "{{cookiecutter.base_image}}",
     "runArgs": [
-        "--env-file", ".devcontainer/.user"
+        "--env-file",
+        ".devcontainer/.user"
     ],
     "customizations": {
         "vscode": {
