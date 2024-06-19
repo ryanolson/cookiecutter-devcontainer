@@ -22,5 +22,6 @@
     "updateContentCommand": "bash .devcontainer/01-update-content.sh",
     "postCreateCommand": "bash .devcontainer/02-post-create.sh",
     "postAttachCommand": "bash .devcontainer/03-post-attach.sh",
-    "remoteUser": "${localEnv:USER}"
+    "remoteUser": "${localEnv:USER}",
+    "overrideCommand": true
 }
