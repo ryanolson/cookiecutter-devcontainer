@@ -1,5 +1,5 @@
 {
-    "name": "{{cookiecutter.project_name}}",
+    "name": "{{cookiecutter.project_name}} devcontainer",
     "image": "{{cookiecutter.devcontainer_base_image}}",
     "runArgs": [
         "--env-file", ".devcontainer/.user"
