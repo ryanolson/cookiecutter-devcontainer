@@ -22,7 +22,7 @@ fi
 
 # Create the user inside the container if it doesn't exist
 if ! id -u $USER_ID > /dev/null 2>&1; then
-    useradd -u $USER_ID -g $GROUP_ID -o -m $USERNAME
+    useradd -u $USER_ID -g $GROUP_ID -o -m -s /bin/bash $USERNAME
     echo "$USERNAME:$PASSWORD" | chpasswd
 fi
 
