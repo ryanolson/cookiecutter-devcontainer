@@ -8,8 +8,8 @@ RUN apt-get update && \
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh
 
-# # Set entrypoint
-# ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
+# Set entrypoint
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 
 # # Install oh-my-zsh
 # RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended && \
@@ -19,5 +19,5 @@ RUN chmod +x /usr/local/bin/entrypoint.sh
 # # Set the default shell to zsh
 # SHELL ["/bin/zsh", "-c"]
 
-# # Set the default command to sleep
-# CMD [ "sleep", "infinity" ]
+# Set the default command to sleep
+CMD [ "sleep", "infinity" ]

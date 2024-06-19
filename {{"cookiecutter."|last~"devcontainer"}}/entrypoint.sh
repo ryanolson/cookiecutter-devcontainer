@@ -1,4 +1,4 @@
-#!/bin/bash -x -e
+#!/bin/bash
 
 echo "*** Running entrypoint.sh script..."
 
