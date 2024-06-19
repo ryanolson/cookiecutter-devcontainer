@@ -22,5 +22,7 @@
     // "updateContentCommand": "bash .devcontainer/01-update-content.sh",
     // "postCreateCommand": "bash .devcontainer/02-post-create.sh",
     // "postAttachCommand": "bash .devcontainer/03-post-attach.sh",
-    "overrideCommand": false
+    "overrideCommand": false,
+    "remoteUser": "${localEnv:USER}",
+    "updateRemoteUserUID": false
 }
