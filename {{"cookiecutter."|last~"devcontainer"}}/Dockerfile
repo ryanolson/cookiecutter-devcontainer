@@ -16,8 +16,5 @@ RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master
     git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-completions && \
     echo "plugins=(git zsh-completions)" >> ~/.zshrc
 
-# Set the default shell to zsh
-SHELL ["/bin/zsh", "-c"]
-
 # Set the default command to sleep
 CMD [ "sleep", "infinity" ]
