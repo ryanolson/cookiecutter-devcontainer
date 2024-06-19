@@ -15,6 +15,9 @@
                 "rust-lang.rust-analyzer",
                 "corker.vscode-micromamba"
             ]
+        },
+        "settings": {
+            "terminal.integrated.defaultProfile.linux": "bash"
         }
     },
     "initializeCommand": "bash .devcontainer/initialize.sh",
