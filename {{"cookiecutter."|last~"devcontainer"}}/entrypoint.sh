@@ -11,6 +11,7 @@ USER_ID=${DEV_UID:-9001}
 GROUP_ID=${DEV_GID:-9001}
 USERNAME=${DEV_USER:-coder}
 GROUPNAME=${DEV_GROUP:-coder}
+PASSWORD=${DEV_PASSWORD:-$(openssl rand -base64 12)}
 
 # Create the group inside the container if it doesn't exist
 if ! getent group $GROUP_ID > /dev/null 2>&1; then
@@ -20,6 +21,7 @@ fi
 # Create the user inside the container if it doesn't exist
 if ! id -u $USER_ID > /dev/null 2>&1; then
     useradd -u $USER_ID -g $GROUP_ID -o -m $USERNAME
+    echo "$USERNAME:$PASSWORD" | chpasswd
 fi
 
 # Add the user to sudoers with passwordless sudo
