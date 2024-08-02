@@ -6,7 +6,9 @@
     },
     "runArgs": [
         "--env-file",
-        ".devcontainer/.user"
+        ".devcontainer/.user",
+        "--env-file",
+        ".devcontainer/env"
     ],
     "customizations": {
         "vscode": {

@@ -11,3 +11,4 @@ DEV_GROUP_NAME=$(getent group $(id -g) | cut -d: -f1)
 EOF
 
 cat .devcontainer/.user
+touch .devcontainer/env
