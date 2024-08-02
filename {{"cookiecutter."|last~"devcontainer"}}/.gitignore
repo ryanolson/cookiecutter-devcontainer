@@ -6,3 +6,4 @@
 # 
 # ignore this file when commiting changes to the repo
 .user
+env
